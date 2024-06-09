@@ -1,0 +1,288 @@
+@import 'https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css';
+// @font-face {
+//   font-family: 'xeicon';
+//   src: url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css')
+//     format('truetype');
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'xeicon';
+  src: url('https://db.onlinewebfonts.com/t/cec261a6137b72474ef54da687eeceeb.eot');
+  src:
+    url('https://db.onlinewebfonts.com/t/cec261a6137b72474ef54da687eeceeb.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://db.onlinewebfonts.com/t/cec261a6137b72474ef54da687eeceeb.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/cec261a6137b72474ef54da687eeceeb.woff')
+      format('woff'),
+    url('https://db.onlinewebfonts.com/t/cec261a6137b72474ef54da687eeceeb.ttf')
+      format('truetype'),
+    url('https://db.onlinewebfonts.com/t/cec261a6137b72474ef54da687eeceeb.svg#xeicon')
+      format('svg');
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-primary {
+  color: #222;
+}
+
+.text-secondary {
+  color: #555;
+}
+
+.text-tertiary {
+  color: #777;
+}
+
+.text-quaternary {
+  color: #afb3ba;
+}
+
+.chip {
+  padding: 0 16px;
+  height: 34px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #fff;
+}
+// modal
+.ant-modal-title {
+  font-size: 17px !important;
+  color: #222 !important;
+}
+
+.ant-modal-content {
+  padding: 14px 20px !important;
+  padding-bottom: 30px !important;
+}
+.ant-modal-header {
+  margin-bottom: 15px !important;
+}
+
+.ant-modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-modal-close {
+  top: 12px !important;
+  width: fit-content !important;
+
+  &:hover {
+    background-color: unset !important;
+  }
+}
+
+.btn-ok {
+  background-color: #2aad9b !important;
+
+  &:hover {
+    background-color: #2aad9b !important;
+    opacity: 0.8;
+  }
+}
+
+.btn-cancel {
+  background-color: #888;
+
+  &:hover {
+    background-color: #888 !important;
+    opacity: 0.8;
+  }
+}
+
+.btn-black {
+  background-color: #000 !important;
+
+  span {
+    color: #fff !important;
+  }
+  &:hover {
+    background-color: #000 !important;
+    opacity: 0.8;
+  }
+}
+
+.btn-blue {
+  background-color: #5470c6;
+  color: #fff;
+
+  &:hover {
+    background-color: #5470c6 !important;
+    opacity: 0.8;
+  }
+}
+
+// Login form
+.ant-form-item-required {
+  &::before {
+    display: none !important;
+  }
+}
+
+.btn-dark-green {
+  background-color: #38475f;
+  color: #fff;
+
+  &:hover {
+    background-color: #38475f !important;
+    opacity: 0.8;
+    color: #fff !important;
+  }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c3c5c7;
+  border-radius: 4px;
+}
+
+.ant-col.ant-form-item-label {
+  padding-bottom: 5px;
+}
+
+.ant-btn-default {
+  border-color: #e5e5e5;
+}
+
+.ant-checkbox-inner {
+  background-color: #fff !important; // selected color
+
+  border-color: #ccc !important;
+
+  &::after {
+    border-color: red !important;
+  }
+}
+
+// menu
+
+.ant-menu-submenu {
+  .ant-menu {
+    padding: 12px 10px !important;
+  }
+  .ant-menu-item {
+    margin: 0 !important;
+    background-color: #fff !important;
+    height: 34px !important;
+    display: flex !important;
+    align-items: center !important;
+    color: #777 !important;
+    font-size: 15px !important;
+
+    &.ant-menu-item-selected {
+      color: #38475f !important;
+      font-weight: 500 !important;
+    }
+  }
+}
+
+.react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  z-index: 1;
+  width: 10px;
+  height: 100%;
+  cursor: col-resize;
+}
+
+.btn-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 6px 20px;
+}
+
+.ant-select-item-option-content {
+  font-size: 17px !important;
+}
+.ant-picker-time-panel-column::after {
+  height: 0px !important;
+}
+textarea::placeholder,
+input::placeholder,
+.ant-select-selection-placeholder {
+  color: #ddd !important;
+}
+.ant-select-selection-placeholder {
+  font-size: 16px;
+}
+.ant-input-number {
+  width: 100% !important;
+}
+
+.ant-upload {
+  input[type='file'] {
+    position: absolute;
+    inset: 0;
+    display: block !important;
+    visibility: hidden;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.select-dropdown-app {
+  & .rc-virtual-list-holder {
+    overflow-y: auto !important;
+  }
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner:after {
+  background-color: #fff !important;
+}
+
+.ant-avatar {
+  flex-shrink: 0;
+  background-color: unset;
+  .ant-avatar-string {
+    transform: scale(1) translateX(-50%) !important;
+    height: 100%;
+    width: 100%;
+  }
+}
+.avatar-default {
+  border-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.ellipsis-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ant-select-dropdown .ant-select-item-option-content {
+  white-space: pre-wrap !important;
+}
+.ant-input-number-disabled {
+  background-color: #fff;
+}

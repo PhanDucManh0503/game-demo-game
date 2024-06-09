@@ -1,0 +1,47 @@
+.date-picker {
+  width: 120px;
+  height: 36px;
+  flex-shrink: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div div input {
+    text-align: center !important;
+    color: #222 !important;
+    font-size: 15px !important;
+    line-height: normal !important;
+  }
+}
+
+.btn {
+  width: 36px;
+  height: 36px;
+
+  width: 42px;
+  flex-shrink: 0;
+  border: 1px solid #ddd;
+  background: #fff !important;
+  color: #ccc !important;
+
+  font-size: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: unset;
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+.btn-next {
+  border-radius: 0px 6px 6px 0px;
+}
+.btn-prev {
+  border-radius: 6px 0px 0px 6px;
+}

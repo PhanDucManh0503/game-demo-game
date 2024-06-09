@@ -1,0 +1,73 @@
+.root :global {
+  display: flex;
+  flex: 1;
+  // gap: 20px;
+  // & .ant-tabs,
+  // & .ant-tabs .ant-tabs-content,
+  // & .ant-tabs .ant-tabs-content .ant-tabs-tabpane {
+  //   height: 100%;
+  // }
+}
+
+.detail,
+.no-data {
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  min-width: 620px;
+}
+
+.no-data {
+  height: calc(100% + 100px);
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & p {
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #222;
+  }
+}
+
+.btn-long-term-employee {
+  margin-top: 20px;
+  padding: 80px 60px;
+  border-radius: 10px;
+  background-color: #38475f;
+  color: #fff;
+  width: 75%;
+  height: 100px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    color: #fff !important;
+    opacity: 0.9;
+  }
+}
+
+.loading {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-confirm {
+  margin-top: 10px;
+  font-size: 17px;
+  text-align: center;
+}

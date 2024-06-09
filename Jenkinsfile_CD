@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(name: 'GIT_SHA', defaultValue: '', description: 'Input GIT SHA')
+        choice(name: 'ENV', choices: ['staging', 'production'], description: 'Select environment to deploy')
+    }
+
+    environment {
+        ENVIRONMENT = "${params.ENV}"
+        SERVICE_NAME = "erp-fe"
+        IMAGE_NAME = "${SERVICE_NAME}:${params.GIT_SHA}"
+        PORT_CONFIGURATION = "-p 3000:3000"
+        CONTAINER_NAME = "${SERVICE_NAME}-${params.GIT_SHA}"
+    }
+
+    stages {
+        stage('Download artifact') {
+            steps {
+                echo "Download revision: ${params.GIT_SHA}"
+            }
+        }
+
+        stage('Stop current') {
+            steps {
+                echo "Stop previous version"
+                sh "docker ps -q --filter name=${SERVICE_NAME} | xargs -r docker stop"
+            }
+        }
+        stage('Deploy EC2') {
+            steps {
+                echo "Deploy to ${ENVIRONMENT}"
+                sh "docker run -dit --name ${CONTAINER_NAME} ${PORT_CONFIGURATION} ${IMAGE_NAME}"
+                sh "docker ps"
+            }
+        }
+    }
+}

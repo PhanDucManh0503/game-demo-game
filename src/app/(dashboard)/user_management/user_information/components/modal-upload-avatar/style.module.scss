@@ -1,0 +1,58 @@
+.content {
+  margin-top: 30px;
+  margin-bottom: 16px;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.cropper-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  height: 420px;
+
+  :global {
+    .reactEasyCrop_CropArea {
+      color: rgba(255, 255, 255, 0.5) !important;
+    }
+  }
+}
+
+.upload {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.full-width {
+  :global {
+    .ant-upload {
+      width: 100% !important;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  z-index: 999;
+}
+.arrow-top-left {
+  top: 37px;
+  left: 37px;
+}
+.arrow-top-right {
+  top: 37px;
+  right: 37px;
+}
+.arrow-bottom-left {
+  bottom: 37px;
+  left: 37px;
+}
+.arrow-bottom-right {
+  bottom: 37px;
+  right: 37px;
+}

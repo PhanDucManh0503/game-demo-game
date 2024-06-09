@@ -1,0 +1,61 @@
+.content {
+}
+.form-find-id {
+  margin-top: 30px;
+}
+
+.notification {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  .note {
+    color: #222;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    min-height: 25px;
+    .special {
+      font-weight: 700 !important;
+    }
+  }
+}
+
+.item-find-id div div label {
+  color: #222 !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+}
+
+.item-find-id div div {
+  label span {
+    color: #666 !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+  }
+
+  input,
+  textarea {
+    color: #666 !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+  }
+  div div div div span {
+    color: #666 !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+  }
+  i {
+    font-size: 22px;
+  }
+}

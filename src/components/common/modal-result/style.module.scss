@@ -1,0 +1,30 @@
+.modal {
+  :global {
+    .ant-modal-body {
+      overflow-y: auto;
+      overflow-x: hidden !important;
+      max-height: calc(100vh - 345px);
+    }
+    .ant-modal-content {
+      padding: 0px !important;
+      border-radius: 0px !important;
+      border: 2px solid #777;
+    }
+  }
+}
+.btn-close {
+  width: 100%;
+  background-color: #777;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.wrapper {
+  padding: 15px 15px 0px;
+}

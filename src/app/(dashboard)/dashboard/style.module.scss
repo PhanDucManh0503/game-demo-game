@@ -1,0 +1,79 @@
+.chart-wrapper {
+  min-height: 352px;
+  height: 100%;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.chart-header-title {
+  color: #222;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.year-cards {
+  .card-list {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 30px;
+
+    &.sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &.md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &.lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &.xl {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &.xxl {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+.table {
+  margin-top: 30px;
+}
+
+.title {
+  color: #222;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section {
+  padding: 14px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.08);
+}
+
+.wrapper {
+  padding: 14px 20px;
+  padding-top: 0;
+  background-color: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.08);
+}
+
+.btn {
+  min-width: 130px;
+}

@@ -1,0 +1,124 @@
+.root {
+  width: 548px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 31px;
+  flex-wrap: wrap;
+}
+
+.staff-filter {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-groups {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  .filter-item {
+    width: 100%;
+    min-width: 80px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    color: #222;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  .filter-active {
+    color: #fff !important;
+    background: #38475f !important;
+  }
+}
+
+.search-box :global {
+  display: flex;
+  gap: 4px;
+  & .ant-form-item {
+    flex: 1;
+    margin-bottom: 0px;
+  }
+}
+
+.staff-list {
+  padding: 20px 20px 0;
+  overflow-y: auto;
+  & div + div {
+    margin-top: 10px;
+  }
+}
+
+.box-no-staff {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .note {
+    color: #222;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .btn-connect {
+    width: 200px;
+    min-height: 48px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #2aad9b;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+@media screen and (max-width: 1728px) {
+  .root {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .root {
+    width: 360px;
+  }
+  .staff-filter {
+    padding: 10px;
+  }
+  .staff-list {
+    padding: 10px 10px 0;
+  }
+
+  .search-box :global {
+    & .ant-input,
+    & button {
+      height: 44px !important;
+    }
+  }
+}

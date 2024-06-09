@@ -1,0 +1,85 @@
+.login-container {
+  width: 480px;
+  padding: 25px 20px 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 4px 4px 4px 1px rgb(0 0 0 / 8%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (width <= 500px) {
+    width: 90%;
+    margin: auto;
+  }
+
+  .ant-form-item-required {
+    &::before {
+      display: none !important;
+    }
+  }
+  & :global .ant-form-item-label > label {
+    font-size: 17px !important;
+    color: #222 !important;
+    font-weight: 400 !important;
+  }
+  & :global .ant-col.ant-form-item-label {
+    padding-bottom: 4.29px !important;
+  }
+  & :global .ant-form-item {
+    margin-bottom: 20px !important;
+  }
+}
+
+.input {
+  width: 440px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+
+  @media screen and (width <= 500px) {
+    width: 100%;
+  }
+  & :global .anticon svg {
+    display: none !important;
+  }
+}
+
+.btn-submit {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (width <= 500px) {
+    width: 90%;
+    margin: auto;
+  }
+
+  .btn {
+    width: 480px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #2aad9b;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 40px;
+
+    &:hover {
+      color: white !important;
+    }
+
+    @media screen and (width <= 500px) {
+      width: 100%;
+    }
+  }
+}

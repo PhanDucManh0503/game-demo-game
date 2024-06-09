@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    environment {
+        SERVICE_NAME = "erp-fe"
+        IMAGE_NAME = "erp-fe:${env.GIT_COMMIT}"
+    }
+
+    stages {
+        stage('Package Image') {
+            steps {
+                echo 'Docker build image....'
+                echo "Git SHA:  ${env.GIT_COMMIT}"
+                echo "Git branch: ${env.GIT_BRANCH}"
+
+                script {
+                    sh "docker build -t ${IMAGE_NAME} ."
+                    sh "docker images"
+                }
+            }
+        }
+
+        stage('Push Image') {
+            steps {
+                echo "Push Image to Registry"
+            }
+        }
+    }
+}

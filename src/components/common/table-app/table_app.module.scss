@@ -1,0 +1,107 @@
+.root :global {
+  .ant-table-body {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    & {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+  & .ant-table-thead tr th {
+    background-color: #fff !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    color: #222 !important;
+    text-align: center !important;
+    border-bottom: 2px solid #222 !important;
+    // white-space: nowrap;
+    line-break: anywhere;
+    user-select: none;
+    &::before {
+      display: none;
+    }
+  }
+  & .ant-table-tbody tr td {
+    font-size: 17px !important;
+    text-align: center !important;
+    border-bottom: 2px solid #eee !important;
+    color: #777777;
+    // white-space: nowrap;
+    line-break: anywhere;
+  }
+  & .ant-table-tbody tr {
+    &:nth-child(even) td {
+      background-color: #f9fafc;
+    }
+    &:nth-child(odd) td {
+      background-color: #ffffff;
+    }
+  }
+  .higth-light-row {
+    & td {
+      background-color: #e6f4ff !important;
+      // color: #fff !important;
+    }
+    & i {
+      color: #fff !important;
+    }
+  }
+  .hide-first-row {
+    & .ant-table-tbody tr:first-child {
+      display: none !important;
+    }
+  }
+
+  .last-child-130 {
+    & .ant-table-thead tr th:last-child {
+      min-width: 130px !important;
+    }
+  }
+
+  .h-46 {
+    & .ant-table-tbody tr td {
+      padding: 0px !important;
+      height: 46px !important;
+    }
+  }
+  .h-64 {
+    & .ant-table-row .ant-table-tbody tr td {
+      padding: 0px !important;
+      height: 64px !important;
+    }
+  }
+  .table-w-1800 .ant-table {
+    min-width: 1800px;
+  }
+  .table-w-1640 .ant-table {
+    min-width: 1640px;
+  }
+  // & .ant-table-sticky-scroll {
+  //   display: none;
+  // }
+}
+
+@media screen and (max-width: 1280px) {
+  .root :global {
+    & .ant-table-thead tr th,
+    & .ant-table-tbody tr td {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.custom-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // margin: auto;
+}
+
+.handle-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}

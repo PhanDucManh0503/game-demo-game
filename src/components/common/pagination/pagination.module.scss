@@ -1,0 +1,52 @@
+.root :global {
+  margin-top: 40px;
+  text-align: center;
+  & .ant-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      margin: 0;
+      background: #fff;
+      font-size: 15px;
+      color: #999;
+      border: 1px solid #ddd;
+      border-right: none;
+      border-radius: 0;
+    }
+    & .ant-pagination-prev {
+      width: 70px;
+      border-radius: 6px 0px 0px 6px;
+    }
+    & .ant-pagination-next {
+      width: 70px;
+      border-right: 1px solid #ddd;
+      border-radius: 0px 6px 6px 0px;
+    }
+    & .btn-prev,
+    & .btn-next {
+      color: #999;
+    }
+    & .ant-pagination-item-active {
+      background: #38475f;
+      border-color: #38475f;
+      box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.08);
+      & a {
+        color: #fff;
+        font-weight: 400;
+      }
+    }
+    & .ant-pagination-jump-prev,
+    & .ant-pagination-jump-next {
+      display: block;
+    }
+    & .ant-pagination-item-ellipsis {
+      line-height: 36px;
+    }
+  }
+}

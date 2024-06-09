@@ -1,0 +1,74 @@
+.card {
+  position: relative;
+  height: 100px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  width: 100%;
+
+  .title {
+    color: #222;
+    font-size: 19px;
+    line-height: normal;
+  }
+
+  .desc {
+    margin-top: 5px;
+    color: #888;
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .count {
+    position: absolute;
+    bottom: 8px;
+    right: 18px;
+
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+    line-height: normal;
+
+    &.red {
+      color: #c93f3f;
+    }
+    &.black {
+      color: #222;
+    }
+    &.primary {
+      color: #2aad9a;
+    }
+    &.white {
+      color: #2aad9a;
+    }
+  }
+
+  &.primary {
+    background-color: #2aad9a;
+
+    .title {
+      color: #fff;
+    }
+    .desc {
+      color: #fff;
+      font-size: 14px;
+      opacity: 0.5;
+    }
+
+    .count {
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+
+  .button {
+    position: absolute;
+    bottom: 10px;
+    right: 18px;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}

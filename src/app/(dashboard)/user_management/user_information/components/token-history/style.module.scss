@@ -1,0 +1,18 @@
+.root {
+  margin-bottom: 34px;
+  padding: 20px;
+  height: 695px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  min-height: 63px;
+
+  & .button-group {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

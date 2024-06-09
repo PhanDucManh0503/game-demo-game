@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next",
+    "prettier",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
+    "eslint:recommended",
+    "google"
+  ],
+  "plugins": ["import", "@tanstack/query"],
+  "rules": {
+    "no-unused-vars": "error",
+    "@next/next/no-document-import-in-page": "off",
+    "import/no-unused-modules": 1,
+    "no-undef": "off",
+    "object-curly-spacing": "off",
+    "require-jsdoc": "off",
+    "max-len": "off",
+    "indent": "off",
+    "no-useless-catch": "off",
+    "camelcase": "off",
+    "new-cap": "off",
+    "operator-linebreak": "off",
+    "quotes": "off",
+    "linebreak-style":0,
+    "space-before-function-paren": 0,
+    "guard-for-in":0,
+    "stylelint-disable":0,
+    "quote-props":0
+  }
+}

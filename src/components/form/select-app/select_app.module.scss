@@ -1,0 +1,41 @@
+.root :global {
+  width: 100%;
+  & .ant-select-selection-item {
+    font-size: 16px;
+    color: #666;
+  }
+}
+
+.customPopupSelect :global {
+  & .ant-select-item-option-content {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .root :global {
+    & .ant-select-selection-item {
+      font-size: 14px;
+    }
+  }
+
+  .customPopupSelect :global {
+    & .ant-select-item-option-content {
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .root :global {
+    & .ant-select-selection-item {
+      font-size: 12px;
+    }
+  }
+
+  .customPopupSelect :global {
+    & .ant-select-item-option-content {
+      font-size: 12px !important;
+    }
+  }
+}

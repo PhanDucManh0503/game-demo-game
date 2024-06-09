@@ -1,0 +1,86 @@
+.container-radio {
+  width: 100%;
+  height: calc(100% - 30px) !important;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #f5f5f5;
+  padding: 30px 20px 10px;
+  .item-radio {
+    margin-bottom: 20px;
+    .title-option {
+      color: #222;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .description-option {
+      margin-top: 10px;
+      color: #666;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+    }
+    .text-666 {
+      color: #666;
+    }
+  }
+  & :global .ant-radio-wrapper .ant-radio {
+    align-self: self-start !important;
+    margin-top: 3px;
+  }
+  & :global .ant-radio-inner {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  & :global .ant-row {
+    height: auto;
+  }
+}
+.label-radio {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: flex;
+
+  .tooltip {
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 20px;
+    background: #38475f;
+    padding: 3px 16px 5px;
+    margin-left: 7px;
+  }
+}
+
+.group-radios :global {
+  width: 100%;
+  & .ant-radio-group {
+    height: 100% !important;
+  }
+  & .ant-form-item {
+    width: 100%;
+  }
+  & .ant-radio-wrapper {
+    font-size: 16px;
+    color: #666;
+  }
+  & .ant-radio {
+    margin-top: 2px;
+  }
+  & .ant-radio-inner {
+    width: 20px;
+    height: 20px;
+  }
+  & .ant-radio-inner::after {
+    width: 20px;
+    height: 20px;
+    margin-block-start: -10px;
+    margin-inline-start: -10px;
+    transform: scale(0.5) !important;
+  }
+}

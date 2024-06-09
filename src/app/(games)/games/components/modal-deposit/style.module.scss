@@ -1,0 +1,69 @@
+.content {
+  padding: 20px 0px;
+}
+
+.form-item div div label {
+  color: #222 !important;
+  font-size: 17px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+}
+
+.form-item {
+  & textarea {
+    resize: none;
+  }
+  & :global {
+    .ant-checkbox-inner {
+      width: 20px !important;
+      height: 20px !important;
+    }
+    .ant-checkbox-inner::after {
+      width: 7px !important;
+      height: 12px !important;
+    }
+    .ant-select-selection-item {
+      color: #666 !important;
+      font-size: 16px !important;
+      font-style: normal;
+      font-weight: 400 !important;
+      line-height: normal;
+    }
+    .ant-form-item-label > label {
+      color: #222 !important;
+      font-size: 17px !important;
+      font-style: normal;
+      font-weight: 400 !important;
+      line-height: normal;
+    }
+    input,
+    textarea {
+      color: #666 !important;
+      font-size: 16px !important;
+      font-style: normal;
+      font-weight: 400 !important;
+      line-height: normal;
+    }
+    input::placeholder {
+      color: #ddd;
+      font-size: 16px !important;
+    }
+    .ant-select-selection-placeholder {
+      font-size: 16px !important;
+      font-weight: 400 !important;
+    }
+    .ant-input-group-addon {
+      background-color: #fff;
+      padding: 0px !important;
+    }
+
+    .ant-upload {
+      width: 100%;
+    }
+    i {
+      font-size: 20px !important;
+      color: #777;
+    }
+  }
+}
